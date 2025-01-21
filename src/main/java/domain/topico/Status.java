@@ -1,2 +1,9 @@
-package domain.topico;public class Status {
+package domain.topico;
+
+public enum Status {
+
+    aberto,
+    fechado,
+    pendente,
+    resolvido;
 }

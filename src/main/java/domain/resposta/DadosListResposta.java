@@ -5,7 +5,7 @@ import domain.user.DadosListUser;
 
 import java.time.Instant;
 
-public record DadosListReposta(
+public record DadosListResposta(
         Long id,
         String mensagem,
         Instant dataCriacao,
@@ -13,7 +13,7 @@ public record DadosListReposta(
         DadosListUser autor,
         DadosListTopico topico
 ) {
-    public DadosListReposta(Resposta response) {
+    public DadosListResposta(Resposta response) {
         this(
                 response.getId(),
                 response.getMensagem(),
